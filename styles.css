@@ -1,0 +1,85 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap');
+
+*{
+	margin: 0;
+	padding: 0;
+	box-sizing: border-box;
+	font-family: 'Roboto', sans-serif;
+}
+
+body{
+	background: #eae9ef;
+	padding: 50px 30px 0;
+}
+
+.wrapper .header{
+	margin-bottom: 30px;
+}
+
+.wrapper .header h1{
+	font-weight: 700;
+	text-align: center;
+}
+
+.wrapper .box_wrapper{
+	display: flex;
+	justify-content: center;	
+}
+
+.wrapper .box_row{
+	display: flex;
+	justify-content: space-between;
+	width: 90%;	
+}
+
+.wrapper .box_row .box_col{
+	margin-right: 15px;
+	width: 400px;
+	text-align: center;
+	padding: 25px;
+	border-radius: 15px;
+	box-shadow: 0 0 2px rgba(0,0,0,0.1);
+	color: #fff;
+}
+
+.wrapper .box_row .box_col:last-child{
+	margin-right: 0px;
+}
+
+.wrapper .box_row .box_col.box_col_1{
+	background: #6565d7;
+}
+
+.wrapper .box_row .box_col.box_col_2{
+	background: #ebca47;
+}
+
+.wrapper .box_row .box_col.box_col_3{
+	background: #ef485c;
+}
+
+.wrapper .box_row .box_col .box_title{
+	margin: 12px 0;
+	font-size: 18px;
+	font-weight: 700;
+}
+
+@media screen and (max-width: 1024px) {
+	body{
+		padding: 50px 15px 0;
+	}
+	.wrapper .box_row{
+		width: 100%;	
+	}  
+}
+
+@media screen and (max-width: 767px) {
+	.wrapper .box_row{
+		flex-direction: column;
+	}
+	.wrapper .box_row .box_col{
+		width: 100%;
+		margin: 0;
+		margin-bottom: 15px;
+	}
+}
